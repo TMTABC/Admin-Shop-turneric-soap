@@ -52,10 +52,10 @@ function AddProduct(props) {
             </div>
             <div className={'addproduct-itemfield'}>
                 <p>Product Category</p>
-                <select value={productDetails.category} onChange={changeHandler} name="category" className={'add-product-selector'} id="">
-                    <option value="women">Women</option>
-                    <option value="men">Men</option>
-                    <option value="kid">Kid</option>
+                <select value={productDetails.category} defaultValue={'xaphong'} onChange={changeHandler} name="category" className={'add-product-selector'} id="">
+                    <option value="xaphong">Xà phòng</option>
+                    <option value="suatam">Sữa tắm</option>
+                    <option value="dauduong">Dầu dưỡng</option>
                 </select>
             </div>
             <div className={'addproduct-itemfield'}>
@@ -64,7 +64,7 @@ function AddProduct(props) {
                 </label>
                 <input onChange={imageHandler} type="file" name={'image'} id={'file-input'} hidden/>
             </div>
-            <button onClick={()=>{Add_Product()}}  className={'addproduct-btn'}>ADD</button>
+            <button onClick={()=>{Add_Product()}}  className={'addproduct-btn'}>Thêm</button>
 
         </div>
 
